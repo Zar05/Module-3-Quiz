@@ -1,3 +1,8 @@
+---
+Title: Third Module Quiz
+Authors: Agbayani, Cezar Jr. R.
+---
+
 ### Question 1
 
 The life in hours of a battery is known to be approximately normally distributed with standard deviation σ = 1.25 hours. A random sample of 10 batteries (n=10) has a mean life of x̄ = 40.5 hours.
@@ -27,7 +32,7 @@ We reject the null hypothesis only if the P-value is less than α. But since our
 
     Z(0) = 42 - 40 / (1.25 / √10)
     
-Solving the equation above will get us 5.05, and by converting it with the use of z-table we'll get 0.99, which is our β-error.
+Solving the equation above will get us 5.05, and by converting it with the use of R we'll get 0.99, which is our β-error.
 
 
 **D.** What sample size would be required to ensure that β does not exceed 0.10 if the true mean is 44 hours?
@@ -64,7 +69,7 @@ Applying the (7) step procedure:
 
 **Test Statistic:** 
           
-        Z(0) = x̄(1) - x̄(2) - 0 / √((σ(1)^2/n) + (σ(2)^2/n))
+        Z(0) = x̄(2) - x̄(1) - 0 / √((σ(1)^2/n) + (σ(2)^2/n))
 
 **Reject H(0) if:** Reject H(0): μ(1) = μ(2) if the P-value is less than 0.05.
 

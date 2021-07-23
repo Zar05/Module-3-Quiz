@@ -185,7 +185,7 @@ P-value = 1 - φ(Z(0)) = 1 - .896165 = 0.10</code></pre>
 <p><strong>C.</strong> What is the β-error for the text in part B if the true mean life is 42 hours?</p>
 <p>—The <strong>β-error</strong> can be calculated by getting the value of Z(0). So we have the following:</p>
 <pre><code>Z(0) = 42 - 40 / (1.25 / √10)</code></pre>
-<p>Solving the equation above will get us 5.05, and by converting it with the use of z-table we’ll get 0.99, which is our β-error.</p>
+<p>Solving the equation above will get us 5.05, and by converting it with the use of R we’ll get 0.99, which is our β-error.</p>
 <p><strong>D.</strong> What sample size would be required to ensure that β does not exceed 0.10 if the true mean is 44 hours?</p>
 <p>—To determine the required sample size so that β does not exceed 0.10, we can use the following equation:</p>
 <pre><code>δ = μ - μ(0)
@@ -206,7 +206,7 @@ n ≈ (1.25)^2 (1.645 + 1.28)^2 / 4^2</code></pre>
 <p><strong>Null hypothesis</strong>, H(0): H(0): μ(1) - μ(2) = 0.</p>
 <p><strong>Alternative hypothesis</strong>, H(1): H(1): μ(2) &gt; μ(1). It is so to see if the brand B is significantly better than brand A.</p>
 <p><strong>Test Statistic:</strong></p>
-<pre><code>    Z(0) = x̄(1) - x̄(2) - 0 / √((σ(1)^2/n) + (σ(2)^2/n))</code></pre>
+<pre><code>    Z(0) = x̄(2) - x̄(1) - 0 / √((σ(1)^2/n) + (σ(2)^2/n))</code></pre>
 <p><strong>Reject H(0) if:</strong> Reject H(0): μ(1) = μ(2) if the P-value is less than 0.05.</p>
 <p><strong>Computations:</strong> Since the x̄(1) = 19.6 and x̄(2) = 20.2, then:</p>
 <pre><code>  Z(0) = 3.33, which is equal to 0.999566 in z-table
