@@ -1,18 +1,51 @@
 ### Question 1
 
-The life in hours of a battery is known to be approximately normally distrubuted with standard deviation σ = 1.25 hours. A random sample of 10 batteries (n=10) has a mean life of x̄ = 40.5 hours. 
+The life in hours of a battery is known to be approximately normally distrubuted with standard deviation σ = 1.25 hours. A random sample of 10 batteries (n=10) has a mean life of x̄ = 40.5 hours.
+
+    x̄ = 40.5 hours,    n = 10 
+    α = 0.05,           σ = 1.25 hours
 
 **A.** Is there (an) evidence to support the claim that battery life exceeds 40 hours? Use α = 0.05.
 
 **B.** What is the P-value for the test in part A?
 
+—Using the P-value method, we can calculate for an evidence if the average battery life exceeds 40 hours.
+
+    H(0): μ = μ(0)
+
+    H(1): μ > μ(0)
+
+    Z(0) = x̄ - μ(0) / (σ / √n)
+
+Z(0) = 40.5 - 40 / (1.25 / √10)
+
+= 1.26 = 0.896165 **from the z-table**
+
+**P-value** = 1 - φ = 1 - .896165 = 0.10
+
+We reject the null hypothesis only if the P-value is less than α. But since our P-value is greater than α (0.1 > 0.05), it means that the null hypothesis is true. Thus having **no evidence** that the battery life exceeds 40 hours.
+
+
 **C.** What is the β-error for the text in part B if the true mean life is 42 hours?
 
-**D.** What sample size would be required to ensure that β does not exceed 0310 if the true mean is 44 hours?
+—The **β-error** can be calculated by getting the value of Z(0). So we have the following:
+
+    Z(0) = 40.5 - 42 / (1.25 / √10)
+    
+Solving the equation above will get us -3.79, and by converting it with the use of z-table we'll get 0.000075, which is our β-error.
+
+
+**D.** What sample size would be required to ensure that β does not exceed 0.10 if the true mean is 44 hours?
 
 **E.** Explain how you could answer the question in part A by calculating an appropriate confidence bound on battery life.
 
+The problem can be solved by following the (7) step procedure:
 
+**Parameter of interest**: the parameter of interest is μ, the mean burning rate.
+
+**Null hypothesis**, H(0): H(0): μ = 40 hours of battery life.
+
+**Alternative hypothesis**, H(1): H(1): μ > 40 hours of battery life.
 
 
 
@@ -21,7 +54,7 @@ The life in hours of a battery is known to be approximately normally distrubuted
 
 One-sided alternative hypothesis test
 
-H(0): μ = μ(given)
 
-H(1): (real) μ > μ(given) one-sided
+
+δ = μ - μ(0)
 
