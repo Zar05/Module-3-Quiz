@@ -11,23 +11,23 @@ The life in hours of a battery is known to be approximately normally distributed
 
 —Using the P-value method, we can calculate for an evidence if the average battery life exceeds 40 hours.
 
-    H(0): μ = μ(0)
-    H(1): μ > μ(0)
+    H(0): μ = 40 hours of battery life
+    H(1): μ > 40 hours of battery life
     Z(0) = x̄ - μ(0) / (σ / √n)
     Z(0) = 40.5 - 40 / (1.25 / √10)
     = 1.26 = 0.896165 (from the z-table)
     P-value = 1 - φ(Z(0)) = 1 - .896165 = 0.10
 
-We reject the null hypothesis only if the P-value is less than α. But since our P-value is greater than α (0.1 > 0.05), it means that the null hypothesis is true. Thus having **no evidence** that the battery life exceeds 40 hours.
-
+We reject the null hypothesis only if the P-value is less than α. But since our P-value is greater than α (0.1 > 0.05), it means that we have **no strong evidence** that the battery life exceeds 40 hours; thus having to accept the null hypothesis.
+     
 
 **C.** What is the β-error for the text in part B if the true mean life is 42 hours?
 
 —The **β-error** can be calculated by getting the value of Z(0). So we have the following:
 
-    Z(0) = 40.5 - 42 / (1.25 / √10)
+    Z(0) = 42 - 40 / (1.25 / √10)
     
-Solving the equation above will get us -3.79, and by converting it with the use of z-table we'll get 0.000075, subtract it to 1 will get us 0.999925, which is our β-error.
+Solving the equation above will get us 5.05, and by converting it with the use of z-table we'll get 0.99, which is our β-error.
 
 
 **D.** What sample size would be required to ensure that β does not exceed 0.10 if the true mean is 44 hours?
@@ -36,22 +36,42 @@ Solving the equation above will get us -3.79, and by converting it with the use 
 
     δ = μ - μ(0)
     n ≈ σ^2(Z(α) + Z(β))^2 / δ^2
-    n ≈ (1.25)^2 (1.645 + 1.28)^2 / 3.5^2
+    n ≈ (1.25)^2 (1.645 + 1.28)^2 / 4^2
 
-Solving the equation gives us 1 which is the required sample size to ensure that β does not exceed 0.10.
+Solving the equation approximately gives us 1 which is the required sample size to ensure that β does not exceed 0.10.
 
 **E.** Explain how you could answer the question in part A by calculating an appropriate confidence bound on battery life.
 
 —The confidence bound, that we calculated from the equation, essentially tells us the degree of confidence or reliability of the value, that is around the sample mean, that we are testing. 
 
-The problem can be solved by following the (7) step procedure:
 
-**Parameter of interest**: the parameter of interest is μ, the mean burning rate.
-
-**Null hypothesis**, H(0): H(0): μ = 40 hours of battery life.
-
-**Alternative hypothesis**, H(1): H(1): μ > 40 hours of battery life.
 
 ### Question 2
 
 Brand A gasoline was used in 16 similar automobile under identical conditions. The corresponding sample of 16 values (miles per gallon) had mean 19.6 and standard deviation 0.4. Under the same conditions, high-power brand B gasoline gave a sample of 16 values with mean 20.2 and standard deviation 0.6. Is the mileage of B significantly better than that of A? Assume normality. Test the hypothesis using both P-value and fixed significance level with α = 0.05 approaches (if possible).
+
+Applying the (7) step procedure:
+
+      x̄(1) = 19.6,        σ(1) = 0.4
+      x̄(2) = 20.2,        σ(2) = 0.6
+      n = 16,              α = 0.05
+
+**Parameter of interest**: the parameter of interest is the difference in mean of mileage of the two gasoline(s), μ(1) - μ(2); and therefore Δ(0) = 0.
+
+**Null hypothesis**, H(0): H(0): μ(1) - μ(2) = 0.
+
+**Alternative hypothesis**, H(1): H(1): μ(2) > μ(1). It is so to see if the brand B is significantly better than brand A.
+
+**Test Statistic:** 
+          
+        Z(0) = x̄(1) - x̄(2) - 0 / √((σ(1)^2/n) + (σ(2)^2/n))
+
+**Reject H(0) if:** Reject H(0): μ(1) = μ(2) if the P-value is less than 0.05.
+
+**Computations:** Since the x̄(1) = 19.6 and x̄(2) = 20.2, then:
+
+      Z(0) = 3.33, which is equal to 0.999566 in z-table
+      
+**Conclusions:** Since our P-value is 1 - 0.999566 = 0.000434, we reject the null hypothesis at the α = 0.05.
+
+There is a strong evidence suggesting that the mileage of the high-powered brand B gasoline is better than that of A.
