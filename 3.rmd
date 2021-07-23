@@ -1,1 +1,27 @@
-qwewqeqwewqew
+### Question 1
+
+The life in hours of a battery is known to be approximately normally distrubuted with standard deviation σ = 1.25 hours. A random sample of 10 batteries (n=10) has a mean life of x̄ = 40.5 hours. 
+
+**A.** Is there (an) evidence to support the claim that battery life exceeds 40 hours? Use α = 0.05.
+
+**B.** What is the P-value for the test in part A?
+
+**C.** What is the β-error for the text in part B if the true mean life is 42 hours?
+
+**D.** What sample size would be required to ensure that β does not exceed 0310 if the true mean is 44 hours?
+
+**E.** Explain how you could answer the question in part A by calculating an appropriate confidence bound on battery life.
+
+
+
+
+
+
+
+
+One-sided alternative hypothesis test
+
+H(0): μ = μ(given)
+
+H(1): (real) μ > μ(given) one-sided
+
